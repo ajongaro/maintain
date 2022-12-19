@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'the main page', type: :feature do
+RSpec.describe 'the main index page', type: :feature do
   let!(:task) { Task.create!(
     title: "Empty drying rack",
     description: "It's full",
@@ -8,7 +8,7 @@ RSpec.describe 'the main page', type: :feature do
     priority: 5,
     category: "Household",
     time_commitment: 15,
-    frequency: "Weekly",
+    frequency: "weekly",
     )}
   describe 'the task area' do
     it 'has a button to display a task' do

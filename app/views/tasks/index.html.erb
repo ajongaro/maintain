@@ -1,0 +1,11 @@
+<h1>Tasks index</h1>
+
+<% @tasks.each do |task| %>
+<p>
+  <%= task.title  %><br>
+  <%= task.desription  %><br>
+  <%= task.location  %><br>
+  <%= task.priority  %><br>
+  <%= task.time_commitment  %><br>
+  <%= task.frequency  %><br>
+</p>

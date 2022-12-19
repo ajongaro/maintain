@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def index
-    @task = Task.all.first
-    redirect_to "/tasks/#{@task.id}"
+    @tasks = Task.all
+    # redirect_to "/tasks/#{@task.id}"
   end
 
   def show
