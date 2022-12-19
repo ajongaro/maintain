@@ -29,6 +29,7 @@ class TasksController < ApplicationController
       :priority,
       :category,
       :time_commitment,
-      :frequency)
+      :frequency
+    )
   end
 end

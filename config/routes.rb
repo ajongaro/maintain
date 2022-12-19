@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/', to: 'main#index'
   get '/tasks/', to: 'tasks#index'
   get '/tasks/new', to: 'tasks#new'
+  post '/tasks/new', to: 'tasks#create'
   get '/tasks/:id', to: 'tasks#show'
 end
