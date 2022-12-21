@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600&display=swap');
+
+/* Fonts */
+ h1 {
+  font-family: 'Recursive', sans-serif;
+  font-size: xx-large;
+ }
+
+ h2, h3 {
+  font-family: 'Recursive', sans-serif;
+  font-size: large;
+ }
+
+ p {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 400;
+  font-size: small;
+ }
+
+ b {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 600;
+  font-size: small;
+ }
+
+ #new_task_form {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 300;
+  font-size: small;
+ }

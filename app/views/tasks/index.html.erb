@@ -1,0 +1,14 @@
+<!-- app/views/tasks/index -->
+
+<h1>All Tasks Index</h1>
+
+<% @tasks.each do |task| %>
+  <h3><%= task.title  %></h3>
+    <p>
+      <b>Description</b>: <%= task.description  %><br>
+      <b>Location</b>: <%= task.location  %><br>
+      <b>Priority</b>: <%= task.priority  %><br>
+      <b>Time Commitment</b>: <%= task.time_commitment  %> Minutes<br>
+      <b>Frequency</b>: <%= task.frequency.capitalize  %><br>
+    </p>
+<% end %>
