@@ -1,7 +1,7 @@
-<h1>Add Maintenance Task</h1>
+<h1>Add Maintain Task</h1>
 
 <div id="new_task_form">
-  <%= form_with url: "/tasks/new", method: :post, local: true do |form| %>
+  <%= form_with url: "/tasks", method: :post, local: true do |form| %>
     <%= form.label :title %><br>
     <%= form.text_field :title %><br>
     <%= form.label :description %><br>
@@ -10,12 +10,14 @@
     <%= form.text_field :location %><br>
     <%= form.label :priority %><br>
     <%= form.number_field :priority %><br>
+    <p></p>
     <%= form.label :category %><br>
     <%= form.select :category, [["Household","household"],["Outdoors","outdoors"],["Self-care", "selfcare"],["Relationships","relationships"]] %><br>
     <%= form.label :time_commitment %><br>
     <%= form.select :time_commitment, [["15 Minutes",15],["30 Minutes",30],["45 Minutes",45],["1 Hour",60]] %><br>
     <%= form.label :frequency %><br>
-    <%= form.select :frequency, [["Weekly","weekly"],["Bi-Weekly","biweekly"],["Monthly","monthly"],["Quarterly","quarterly"]] %><br>
+    <%= form.select :frequency, [["Weekly","weekly"],["Bi-Weekly","biweekly"],["Monthly","monthly"],["Quarterly","quarterly"]] %><br></p>
+    <p></p>
     <%= form.submit "Create Task" %>
   <% end %>
 </div>

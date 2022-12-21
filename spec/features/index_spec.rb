@@ -10,19 +10,20 @@ RSpec.describe 'the main index page', type: :feature do
     time_commitment: 15,
     frequency: "weekly",
     )}
+
   describe 'the task area' do
     it 'has a button to display a task' do
       visit '/'
 
-      expect(page).to have_button("Display Task")
-      expect(page).to have_content("Main Page")
+      expect(page).to have_button("Summon Task")
+      expect(page).to have_content("Maintain")
     end
 
     it 'displays a task after clicking button' do
       visit '/'
 
-      expect(page).to have_button("Display Task")
-      click_button("Display Task")
+      expect(page).to have_button("Summon Task")
+      click_button("Summon Task")
 
       expect(page).to have_content("Empty drying rack")
     end
