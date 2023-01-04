@@ -30,4 +30,5 @@
 /coverage/*
 coverage
 
-
+# VSCode Settings
+.vscode/
